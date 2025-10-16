@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Sniglet:wght@400;800&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-playanton: "Anton", sans-serif;
+  --font-singleton: "Sniglet", sans-serif;
+}
+
+
+
+/* 👇 Add this custom rule at the bottom */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Scrolling  */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll-left {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 10s linear infinite;
+  gap: 1.5rem;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
