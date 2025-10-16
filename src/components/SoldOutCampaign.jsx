@@ -1,7 +1,7 @@
 import React from "react";
 
 import vehicle from "../assets/vehicle.png";
-import win from "../assets/win.png";
+import win from "../assets/Win.png";
 import amount from "../assets/amount.png";
 import bike from "../assets/bike.png";
 import laptop from "../assets/laptop.png";
