@@ -24,29 +24,30 @@ const LandingPageTwo = () => {
   ];
   return (
     <>
-      <div className=" flex justify-center items-center -mt-12 relative">
-        <h1 className=" text-[#C2EDFF] uppercase lg:text-[270px] font-playanton font-bold ">
+      <div className=" flex flex-col justify-center items-center text-center mt-[-2rem] relative">
+        <h1 className=" text-[#C2EDFF] uppercase mt-[3rem] text-[50px] sm:text-[80px] md:text-[100px]  lg:text-[270px] font-playanton font-bold leading-none ">
           headphone
         </h1>
         <img
           src={mainImages[selected]}
           alt="Main"
-          className="absolute top-16 transition-opacity duration-[2000ms] ease-in-out opacity-100  "
+          className="absolute top-20 md:mr-16 lg:top-2  transition-opacity duration-[2000ms] ease-in-out opacity-100 w-[250px] sm:w-[320px] md:w-[400px] lg:w-[834px]"
           key={selected}
         />
       </div>
-      <div className="text-white ml-16 mt-20 w-[18%]">
+      <div className="text-white ml-16 mt-20 w-[18%] hidden lg:block">
         <h1 className="text-3xl font-semibold ">Next Level Games</h1>
         <p className="text-lg font-light my-4  text-[#C5C5C5]">
           Get ready to train smarter, play harder, and perform stronger with
           premium gear made for every sport.
         </p>
+        <button className="text-black text-lg bg-[#0EB7FF] px-6 py-2 rounded-4xl cursor-pointer">
+          Explore items
+        </button>
       </div>
-      <button className="text-black text-lg bg-[#0EB7FF] ml-16 px-6 py-2 rounded-4xl cursor-pointer">
-        Explore items
-      </button>
-      <div className="flex  justify-between my-18 mx-16">
-        <div className="flex items-end gap-2 m-2">
+
+      <div className="flex flex-col lg:flex-row justify-evenly lg:justify-between my-18 mx-16 mt-56 lg:mt-0">
+        <div className="flex items-end gap-4 z-10">
           {miniImages.map((img, index) => (
             <img
               key={index}
@@ -73,7 +74,7 @@ const LandingPageTwo = () => {
             </div>
             <h2 className="text-xl font-semibold text-[#F5F5F4]">$125</h2>
           </div>
-          <div className=" m mt-4">
+          <div className="mt-4">
             <img src={GalaxyBuds} alt="" className=" rounded-4xl" />
           </div>
         </div>

@@ -25,20 +25,20 @@ const Navbar2 = () => {
   };
 
   return (
-    <nav className="flex justify-evenly items-center space-x-24 mx-12 box-content pt-8">
+    <nav className="flex justify-evenly items-center space-x-24  box-content pt-8">
       <img
         src={buy2get2}
         className="h-12 cursor-pointer"
         onClick={HomeEcommerce}
       />
       <button
-        className="text-3xl text-white md:hidden cursor-pointer"
+        className="text-3xl text-white lg:hidden cursor-pointer "
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <IoClose /> : <GiHamburgerMenu />}
       </button>
 
-      <div className="hidden md:flex justify-center gap-4 items-center bg-[#6969694D] border-1 px-4 py-2 rounded-lg border-[#0EB7FF] text-xl text-white">
+      <div className="hidden lg:flex justify-center gap-4 items-center bg-[#6969694D] border-1 px-4 py-2 rounded-lg border-[#0EB7FF] text-xl text-white">
         <h3
           className="font-semibold text-[#0EB7FF] cursor-pointer"
           onClick={HomeEcommerce}
@@ -52,7 +52,7 @@ const Navbar2 = () => {
           More <FaAngleDown className="ml-1 text-base" />
         </h3>
       </div>
-      <div className="hidden md:flex justify-center items-center space-x-5 text-white">
+      <div className="hidden lg:flex justify-center items-center space-x-5 text-white">
         <div className="bg-[#6969694D] flex justify-center items-center  px-4 py-2 rounded-3xl">
           <IoMdSearch className="mx-1 text-2xl" />
           <input
@@ -78,7 +78,7 @@ const Navbar2 = () => {
       </div>
 
       {isOpen && (
-        <div className="absolute top-20 left-0 w-full bg-[#080808] text-white flex flex-col items-start gap-5 py-5 px-2 md:hidden z-50">
+        <div className="absolute top-20 left-0 w-full bg-[#080808] text-white flex flex-col items-start gap-5 py-5 px-2 lg:hidden z-50">
           <h3 className="font-medium text-[#0EB7FF] cursor-pointer">Home</h3>
           <h3 className="cursor-pointer">Headphone</h3>
           <h3 className="cursor-pointer">Speaker</h3>

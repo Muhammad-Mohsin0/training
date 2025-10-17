@@ -49,7 +49,7 @@ const NeedItems = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-flow-col grid-rows-2 gap-6 justify-center mb-24">
+      <div className="flex flex-col items-center lg:grid grid-flow-col grid-rows-2 gap-6 justify-center mb-24">
         <div className="text-white w-[424px] bg-[#251F1F] rounded-2xl row-span-2 list-none space-y-2 pl-8 py-4 font-semibold text-2xl">
           <ul className="text-[#0EB7FF] text-2xl font-bold pb-4">Categories</ul>
           <li className="underline">Microphones</li>
